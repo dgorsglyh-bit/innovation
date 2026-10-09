@@ -1,0 +1,181 @@
+.container {
+    padding: 2rem 0;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: #f8f9fc;
+    border-radius: 12px;
+}
+
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tab {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--primary-blue);
+    background: transparent;
+    color: var(--primary-blue);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.activeTab {
+    background: var(--primary-blue);
+    color: white;
+}
+
+.searchSort {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.searchWrapper {
+    flex: 1;
+    position: relative;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 0.7rem 1rem 0.7rem 2.5rem;
+    border: 1px solid var(--gray-medium);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+.filterBtn {
+    padding: 0.7rem 1.2rem;
+    border: 1px solid var(--gray-medium);
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cardType {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+
+.type_invention {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.type_utility_model {
+    background: #f1f8e9;
+    color: #388e3c;
+}
+
+.type_software {
+    background: #fff3e0;
+    color: #f57c00;
+}
+
+.cardTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+    color: var(--primary-blue);
+}
+
+.cardMeta {
+    font-size: 0.9rem;
+    color: var(--gray-dark);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.authors {
+    margin-top: auto;
+    font-weight: 500;
+}
+
+.empty {
+    text-align: center;
+    padding: 4rem;
+    color: var(--gray-dark);
+}
+
+.sortMenu {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 5px);
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 200px;
+    overflow: hidden;
+}
+
+.dropdownItem {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropdownItem:hover {
+    background: var(--gray-light);
+}

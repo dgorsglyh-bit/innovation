@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 4rem);
+    background: transparent;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 3rem;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.field label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    padding-left: 0.5rem;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.field input,
+.field select {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease !important;
+    outline: none;
+}
+
+.field input:focus,
+.field select:focus {
+    border-color: var(--primary-blue);
+    background: white;
+    box-shadow: 0 0 0 4px rgba(78, 84, 200, 0.1);
+}
+
+.button {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+    color: var(--white);
+    padding: 1.25rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+    margin-top: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(78, 84, 200, 0.3);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(78, 84, 200, 0.4);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+.error {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    text-align: center;
+    border: 1px solid #fecaca;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.link {
+    color: var(--primary-blue);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

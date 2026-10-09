@@ -1,0 +1,162 @@
+.hubContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hubHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hubHeader h1 {
+    color: var(--primary-blue);
+    font-size: 2.2rem;
+}
+
+.breadcrumb {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.hubGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.hubCard {
+    background: white;
+    border: 1px solid #eee;
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hubCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.hubIcon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Documentation */
+.docList {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.docItem {
+    padding: 1.25rem;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.docLink {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.docLink:hover {
+    color: #0079C2;
+}
+
+/* Dashboard */
+.scrollContainer {
+    width: 100%;
+    overflow: auto;
+    max-height: 500px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 2rem;
+}
+
+.dashboardTable {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1200px;
+}
+
+.dashboardTable th, .dashboardTable td {
+    padding: 1rem;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.dashboardTable th {
+    background: #f8fafc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.dashboardTable td:first-child, .dashboardTable th:first-child {
+    position: sticky;
+    left: 0;
+    background: white;
+    z-index: 11;
+    border-right: 2px solid #eee;
+}
+
+.dashboardTable th:first-child {
+    background: #f8fafc;
+}
+
+/* Charts */
+.chartsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.chartCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid #eee;
+}
+
+.primaryBtn {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.secondaryBtn {
+    background: #f1f5f9;
+    color: #475569;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.inputField {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}

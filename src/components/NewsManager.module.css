@@ -1,0 +1,55 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: white;
+    padding: 2rem;
+    border: 1px solid #ddd;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.field label {
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+.form input,
+.form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    width: 100%;
+}
+
+.form button {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.item {
+    background: white;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.deleteBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: red;
+    font-size: 0.9rem;
+}

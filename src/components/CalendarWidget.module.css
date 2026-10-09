@@ -1,0 +1,125 @@
+.calendarContainer {
+    background: var(--white);
+    border: 1px solid var(--border-blue);
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 0.5rem;
+}
+
+.header button {
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.dayName {
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-blue);
+    padding: 0.5rem 0;
+}
+
+.dayPlaceholder {
+    background: transparent;
+}
+
+.day {
+    border: 1px solid #eee;
+    min-height: 80px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.day:hover {
+    background-color: var(--secondary-blue);
+}
+
+.selected {
+    border: 2px solid var(--primary-blue);
+    background-color: #e3f2fd;
+}
+
+.dayNumber {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.eventMarker {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    line-height: 0.5;
+}
+
+.eventList {
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.eventItem {
+    background-color: var(--gray-light);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid var(--primary-blue);
+}
+
+.adminControls {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.actionBtn {
+    background-color: var(--text-main);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--primary-blue);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+}
+
+.modal input,
+.modal textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalActions button {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 0.5rem 1rem;
+}

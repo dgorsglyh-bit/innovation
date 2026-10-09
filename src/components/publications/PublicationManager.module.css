@@ -1,0 +1,175 @@
+.container {
+    padding: 1rem;
+}
+
+.header {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.yearSection {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+}
+
+.yearHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 1rem;
+}
+
+.yearHeader h2 {
+    margin: 0;
+    color: var(--primary-blue);
+}
+
+.yearActions {
+    display: flex;
+    gap: 1rem;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.table th {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    padding: 2rem !important;
+}
+
+.addBtn,
+.addArticleBtn,
+.saveBtn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.deleteBtn {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.addBtn:hover,
+.addArticleBtn:hover,
+.saveBtn:hover,
+.deleteBtn:hover {
+    opacity: 0.9;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.actions button {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 0.4rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.formGroup textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.fileInput {
+    padding: 1rem;
+    border: 2px dashed #ddd;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cancelBtn {
+    background: #eee;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+}

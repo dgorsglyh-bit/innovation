@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/52652041917684c2.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"buildId":"tYr13rxK1bggNdRgIpZqG","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"main-container","children":[["$","h1",null,{"style":{"marginBottom":"2rem"},"children":"Импортозамещение"}],["$","div",null,{"style":{"padding":"2rem","backgroundColor":"var(--white)","border":"1px solid var(--border-blue)","minHeight":"300px"},"children":[["$","p",null,{"children":["Содержание раздела \"","Импортозамещение","\" находится в разработке."]}],["$","p",null,{"style":{"marginTop":"1rem"},"children":["Здесь будет размещена информация о ","импортозамещение","."]}]]}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+4:null

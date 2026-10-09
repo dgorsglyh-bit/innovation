@@ -1,0 +1,201 @@
+.hubContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hubHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hubHeader h1 {
+    color: var(--primary-blue);
+    font-size: 2.2rem;
+}
+
+.breadcrumb {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.hubGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.hubCard {
+    background: white;
+    border: 1px solid #eee;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hubCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.hubIcon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hubCard h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+/* Module shared */
+.moduleContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.scrollTableWrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: white;
+}
+
+.scrollTable {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+.scrollTable th, .scrollTable td {
+    padding: 1rem;
+    border: 1px solid #f0f0f0;
+    text-align: left;
+}
+
+.scrollTable th {
+    background: #f8fafc;
+}
+
+/* Equipment dashboard */
+.equipmentLayout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.chartCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.pieChart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    position: relative;
+}
+
+.spList {
+    margin-top: 2rem;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.spItem {
+    padding: 0.75rem 1rem;
+    border: 1px solid #efefef;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.spItem:hover {
+    background: #f1f5f9;
+}
+
+.spItem[data-active="true"] {
+    background: var(--primary-blue);
+    color: white;
+    border-color: var(--primary-blue);
+}
+
+/* UI Elements */
+.primaryBtn {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.secondaryBtn {
+    background: #f1f5f9;
+    color: #475569;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.inputField {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modalContent {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}

@@ -1,0 +1,185 @@
+.public {
+    padding: 2rem 0;
+}
+
+.planBlock {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    border: 1px solid var(--gray-light);
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.planTitle {
+    color: var(--primary-blue);
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--gray-light);
+    padding-bottom: 1rem;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.sectionTitle {
+    background: #f8f9fc;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.tableContainer {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #eee;
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.table th {
+    background: #fafafa;
+    color: var(--gray-dark);
+    font-weight: 600;
+}
+
+.submitBtn {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.submitBtn:hover {
+    background: #1976d2;
+}
+
+.downloadLink {
+    color: var(--primary-blue);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.downloadLink:hover {
+    text-decoration: underline;
+}
+
+.archive {
+    margin-top: 4rem;
+    border-top: 2px solid #eee;
+    padding-top: 2rem;
+}
+
+.archiveToggle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    width: 100%;
+    text-align: left;
+}
+
+.archiveContent {
+    margin-top: 1rem;
+    padding-left: 2.5rem;
+}
+
+.archiveFile {
+    display: block;
+    padding: 0.8rem 0;
+    color: #555;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.archiveFile:hover {
+    color: var(--primary-blue);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.fullWidth {
+    grid-column: 1 / -1;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btnGroup {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.cancelBtn {
+    background: #f5f5f5;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+}

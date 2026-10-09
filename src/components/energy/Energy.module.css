@@ -1,0 +1,248 @@
+.hubContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hubHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hubHeader h1 {
+    color: var(--primary-blue);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.breadcrumb {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.breadcrumb a {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
+.hubGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.hubCard {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+}
+
+.hubCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-color: var(--primary-blue);
+}
+
+.hubIcon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hubCard h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+
+/* Module shared styles */
+.moduleContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.protocolCard {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+
+.protocolHeader {
+    padding: 1.25rem 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+}
+
+.protocolHeader h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+}
+
+.protocolContent {
+    padding: 2rem;
+    border-top: 1px solid #eee;
+}
+
+/* Voting buttons */
+.voteBtnGroup {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.voteBtn {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.voteBtn[data-active="true"] {
+    background: var(--primary-blue);
+    color: white;
+    border-color: var(--primary-blue);
+}
+
+/* Admin lists */
+.adminPanel {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f1f5f9;
+    border-radius: 12px;
+}
+
+.memberRow {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    background: white;
+    transition: background 0.2s;
+    align-items: center;
+}
+
+.memberRow:hover {
+    background: #eff6ff;
+}
+
+.memberRow:hover .deleteBtn {
+    opacity: 1;
+}
+
+.deleteBtn {
+    opacity: 0;
+    color: #ef4444;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: opacity 0.2s;
+}
+
+/* Indicators */
+.indicatorTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.indicatorTable th, .indicatorTable td {
+    padding: 1rem;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.indicatorTable th {
+    background: #f8fafc;
+    color: var(--primary-blue);
+}
+
+.footnoteSection {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #fefce8;
+    border-radius: 8px;
+}
+
+.footnoteSection textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    resize: vertical;
+    font-size: 0.9rem;
+    color: #854d0e;
+}
+
+/* General UI */
+.primaryBtn {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.primaryBtn:hover {
+    opacity: 0.9;
+}
+
+.secondaryBtn {
+    background: #e2e8f0;
+    color: #475569;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.secondaryBtn:hover {
+    opacity: 0.9;
+}
+
+.smallBtn {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.inputField {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}

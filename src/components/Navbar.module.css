@@ -1,0 +1,42 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border-bottom: 4px solid var(--secondary-blue);
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.links a {
+    margin-left: 2rem;
+    font-size: 0.9rem;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+.themeToggle {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+}
+
+.themeToggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

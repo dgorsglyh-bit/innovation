@@ -1,0 +1,20 @@
+[
+  {
+    "event": "login_success",
+    "username": "admin",
+    "timestamp": "2026-04-08T05:50:01.539Z",
+    "ip": "::1"
+  },
+  {
+    "event": "login_success",
+    "username": "admin",
+    "timestamp": "2026-04-08T05:56:21.934Z",
+    "ip": "::1"
+  },
+  {
+    "event": "login_success",
+    "username": "admin",
+    "timestamp": "2026-04-09T12:08:00.116Z",
+    "ip": "::1"
+  }
+]
